@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on darwin)" generated="20230404 16:16:12.103" rpa="false" schemaversion="3">
+<suite id="s1" name="Dashboard Admin User List" source="/Users/riko/PycharmProjects/Orange-Hrm-Riko/TEST_SUITES/dashboard_admin_user_list.robot">
+<test id="s1-t1" name="Login Dashboard OrangeHRM" line="14">
+<kw name="Open Dashboard OrangeHRM" library="open_browser">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${urlHrm}</arg>
+<arg>${BrowserType}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230404 16:16:12.391" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20230404 16:16:12.390" endtime="20230404 16:16:23.428"/>
+</kw>
+<kw name="Set Window Size" library="SeleniumLibrary">
+<arg>${1600}</arg>
+<arg>${900}</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" starttime="20230404 16:16:23.428" endtime="20230404 16:16:23.542"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${loginSubmitBtn}</arg>
+<arg>60</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:23.542" endtime="20230404 16:16:24.143"/>
+</kw>
+<status status="PASS" starttime="20230404 16:16:12.389" endtime="20230404 16:16:24.143"/>
+</kw>
+<kw name="Login Dashboard OrangeHRM - Valid" library="login_user">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${inputEmailField}</arg>
+<arg>2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:24.144" endtime="20230404 16:16:24.187"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputEmailField}</arg>
+<arg>${HrmUsername}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230404 16:16:24.187" level="INFO">Typing text 'Admin' into text field '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230404 16:16:24.187" endtime="20230404 16:16:24.356"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${inputPasswordField}</arg>
+<arg>2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:24.356" endtime="20230404 16:16:24.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inputPasswordField}</arg>
+<arg>${HrmPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230404 16:16:24.388" level="INFO">Typing text 'admin123' into text field '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'.</msg>
+<status status="PASS" starttime="20230404 16:16:24.388" endtime="20230404 16:16:24.516"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${loginSubmitBtn}</arg>
+<arg>2s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:24.516" endtime="20230404 16:16:24.532"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${loginSubmitBtn}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230404 16:16:24.532" level="INFO">Clicking button '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'.</msg>
+<status status="PASS" starttime="20230404 16:16:24.532" endtime="20230404 16:16:25.951"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230404 16:16:28.951" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230404 16:16:25.951" endtime="20230404 16:16:28.952"/>
+</kw>
+<status status="PASS" starttime="20230404 16:16:24.144" endtime="20230404 16:16:28.952"/>
+</kw>
+<status status="PASS" starttime="20230404 16:16:12.388" endtime="20230404 16:16:28.952"/>
+</test>
+<test id="s1-t2" name="Check Dashboard User List" line="18">
+<kw name="Open Admin User Page" library="open_admin_user_page">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230404 16:16:30.955" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230404 16:16:28.954" endtime="20230404 16:16:30.955"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${menuAdminBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:30.956" endtime="20230404 16:16:30.976"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${menuAdminBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230404 16:16:30.977" level="INFO">Clicking element '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a'.</msg>
+<status status="PASS" starttime="20230404 16:16:30.976" endtime="20230404 16:16:31.921"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230404 16:16:32.922" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230404 16:16:31.921" endtime="20230404 16:16:32.922"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminUsernameField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:32.922" endtime="20230404 16:16:32.943"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminUserRoleField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:32.944" endtime="20230404 16:16:32.959"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminEmployeeNameField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:32.960" endtime="20230404 16:16:32.976"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminStatusField}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:32.976" endtime="20230404 16:16:32.991"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminSearchFilterBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:32.991" endtime="20230404 16:16:33.007"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminResetFilterBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:33.007" endtime="20230404 16:16:33.023"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminCreateBtn}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:33.023" endtime="20230404 16:16:33.042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminRecordFound}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:33.042" endtime="20230404 16:16:33.058"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminListContainer}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230404 16:16:33.058" endtime="20230404 16:16:33.073"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230404 16:16:35.075" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230404 16:16:33.073" endtime="20230404 16:16:35.075"/>
+</kw>
+<status status="PASS" starttime="20230404 16:16:28.954" endtime="20230404 16:16:35.076"/>
+</kw>
+<status status="PASS" starttime="20230404 16:16:28.953" endtime="20230404 16:16:35.076"/>
+</test>
+<status status="PASS" starttime="20230404 16:16:12.105" endtime="20230404 16:16:35.077"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Dashboard Admin User List">Dashboard Admin User List</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

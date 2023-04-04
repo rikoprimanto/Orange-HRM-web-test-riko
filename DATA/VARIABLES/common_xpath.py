@@ -1,0 +1,20 @@
+#Login Page
+inputEmailField = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[1]/div/div[2]/input'
+inputPasswordField = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[2]/div/div[2]/input'
+loginSubmitBtn = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/form/div[3]/button'
+wrongCredentialsPopUp = '//*[@id="app"]/div[1]/div/div[1]/div/div[2]/div[2]/div/div[1]'
+
+#Admin Page
+menuAdminBtn = '//*[@id="app"]/div[1]/div[1]/aside/nav/div[2]/ul/li[1]/a'
+adminUsernameField = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[1]/div/div[2]/input'
+adminUserRoleField = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[2]/div/div[2]/div/div'
+adminEmployeeNameField = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[3]/div/div[2]/div/div'
+adminStatusField = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[1]/div/div[4]/div/div[2]/div/div'
+adminSearchFilterBtn = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[2]'
+adminResetFilterBtn = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[1]/div[2]/form/div[2]/button[1]'
+adminRecordFound = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div'
+adminListContainer = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]'
+adminDeleteBtn = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[1]/div/div/div[1]/div[2]/div/div/button[2]'
+adminEditBtn = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[3]/div/div/div[2]/div/div/div[1]/div[2]/div/div/button[2]'
+adminNotFound = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[2]/div/span'
+adminCreateBtn = '//*[@id="app"]/div[1]/div[2]/div[2]/div/div[2]/div[1]/button'
