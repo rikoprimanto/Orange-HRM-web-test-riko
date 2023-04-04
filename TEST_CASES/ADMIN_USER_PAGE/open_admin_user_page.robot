@@ -9,7 +9,7 @@ Open Admin User Page
     sleep    2s
     wait until element is visible   ${menuAdminBtn}
     click element    ${menuAdminBtn}
-    sleep    1s
+    sleep    2s
 
     #Display Admin User Page
     wait until element is visible   ${adminUsernameField}
