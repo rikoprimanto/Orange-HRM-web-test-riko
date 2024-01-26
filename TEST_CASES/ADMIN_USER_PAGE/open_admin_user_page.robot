@@ -22,3 +22,19 @@ Open Admin User Page
     wait until element is visible   ${adminRecordFound}
     wait until element is visible   ${adminListContainer}
     sleep    2s
+
+Add New User
+    Sleep    2s
+    Click Button    ${adminCreateBtn}
+    Wait Until Element Is Visible    ${fieldCreateNewUser}
+    Input Text    ${fieldCreateNewUser}    ${newUsername}    2s
+    Input Text    ${fieldCreateNewPassword}    ${newPassword}    2s
+    Input Text    ${fieldCreateNewPasswordConfirm}    ${newPassword}    2s
+    Input Text    ${fieldEmployeeName}    ${employeeName}
+    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div/div[1]
+    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div/div[1]
+    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[1]/div/div[2]/div/div[2]
+    Wait Until Element Is Visible    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div
+    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div
+    Click Element    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[1]/div/div[3]/div/div[2]/div/div[2]
+    Click Button    //*[@id="app"]/div[1]/div[2]/div[2]/div/div/form/div[3]/button[2]

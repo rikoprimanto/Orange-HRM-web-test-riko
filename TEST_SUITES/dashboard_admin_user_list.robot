@@ -11,9 +11,8 @@ Variables    ../DATA/VARIABLES/common_wording.py
 
 *** Test Cases ***
 #Dashboard OrangeHRM
-Login Dashboard OrangeHRM
+Add New User
     Open Dashboard OrangeHRM
     Login Dashboard OrangeHRM - Valid
-
-Check Dashboard User List
     Open Admin User Page
+    Add New User

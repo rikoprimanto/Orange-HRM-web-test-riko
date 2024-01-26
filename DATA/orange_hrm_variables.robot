@@ -14,3 +14,6 @@ ${adminUserRole}            Admin
 ${adminSearchEmployeeName}  Linda Smith
 ${statusEnabled}            Enabled
 ${statusDisabled}           Disabled
+${newUsername}              Johndogh142
+${newPassword}              rahasia234
+${employeeName}             testing
